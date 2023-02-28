@@ -1,0 +1,70 @@
+.subBody {
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  width: 90%;
+  height: 80%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.subCont {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.optionImg {
+  width: 60px;
+}
+.optionsCont {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  height: 100%;
+  align-items: center;
+  width: 100%;
+  border: 2px solid transparent;
+  padding: 5px;
+  border-radius: 5px;
+  flex-wrap: wrap;
+}
+.options {
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid rgb(0, 0, 0, 0.1);
+  transition: all 0.3s linear;
+}
+.options:hover {
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px) scale(1.02);
+}
+.selected {
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 0.3s linear;
+  border: 1px solid #051367;
+  transform: translateY(-2px) scale(1.02);
+}
+.required {
+  border: 2px solid red;
+}
+@media only screen and (max-width: 270px) {
+  .optionImg {
+    width: 35px;
+  }
+  .optionText {
+    font-size: 10px;
+  }
+}

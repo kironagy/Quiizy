@@ -1,0 +1,96 @@
+.welCont {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  z-index: 1000;
+  overflow: hidden;
+  background-color: #dff6ff;
+}
+.curtain {
+  animation: back 1s linear both;
+  z-index: 1001;
+  pointer-events: none;
+  background-color: white;
+  position: absolute;
+  inset: 0 0 0 0;
+}
+.startBtnCont {
+  position: relative;
+  display: flex;
+  padding-right: 25px;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  animation: jump 0.7s cubic-bezier(0.38, -0.35, 0, 1.68) both;
+}
+.startBtn {
+  border: none;
+  background-color: transparent;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 3px;
+  color: rgb(0, 0, 0, 0.5);
+}
+.arrow {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  color: rgb(93, 139, 244);
+  top: 50%;
+  transform: translateY(-50%);
+}
+.arrow:nth-of-type(1) {
+  animation: fadeOpT 1s linear infinite both;
+}
+.arrow:nth-of-type(2) {
+  animation: fadeOp 1s 0.4s linear infinite both;
+}
+@keyframes fadeOp {
+  0% {
+    transform: translateY(-50%) translateX(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-50%) translateX(50px);
+  }
+}
+@keyframes fadeOpT {
+  0% {
+    transform: translateY(-50%) translateX(45px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-50%) translateX(55px);
+  }
+}
+@keyframes aRight {
+  100% {
+    transform: translateX(100%);
+  }
+}
+.animateWel {
+  animation: aRight 0.5s ease both;
+}
+@keyframes back {
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes jump {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

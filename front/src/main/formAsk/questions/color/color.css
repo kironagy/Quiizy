@@ -1,0 +1,11 @@
+.color {
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+}
+@media only screen and (max-width: 270px) {
+  .color {
+    width: 35px;
+    height: 35px;
+  }
+}

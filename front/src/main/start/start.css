@@ -1,0 +1,73 @@
+.startCont {
+  width: 100%;
+  height: 100%;
+  background-color: #5d8bf4;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  z-index: 998;
+}
+.startContAnimate {
+  pointer-events: none;
+  animation: fadeOut 0.5s ease both;
+}
+.instructionsCont {
+  position: relative;
+  background-color: rgb(223, 246, 255, 0.2);
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px 0px 20px;
+  border-radius: 5px;
+}
+.startHead {
+  color: #051367;
+  position: relative;
+  text-align: center;
+}
+.instrBtn {
+  margin-top: auto;
+  margin-left: auto;
+  border-radius: 5px;
+  border: 1px #051367 solid;
+  padding: 10px 20px;
+  background-color: rgb(223, 246, 255, 0.6);
+  font-weight: bold;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  color: #051367;
+  transition: all 0.3s linear;
+  box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.1);
+}
+.instrBtn:hover {
+  background-color: rgb(223, 246, 255);
+}
+.startList {
+  list-style-type: number;
+  margin-top: 20px;
+  margin-bottom: 200px;
+}
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .instrBtn {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .startList {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 310px) {
+  .instrBtn {
+    width: 100%;
+  }
+  .startList {
+    margin-bottom: 100px;
+  }
+}
